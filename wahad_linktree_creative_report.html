@@ -1,0 +1,552 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.rh{padding:1.25rem 0 1rem;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1.25rem}
+.rh h1{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.rh p{font-size:13px;color:var(--color-text-secondary);margin-top:3px}
+.tabs{display:flex;gap:6px;margin-bottom:1.25rem;flex-wrap:wrap}
+.tb{padding:5px 14px;border-radius:20px;border:0.5px solid var(--color-border-secondary);background:transparent;color:var(--color-text-secondary);font-size:13px;cursor:pointer}
+.tb.on{background:var(--color-text-primary);color:var(--color-background-primary);border-color:transparent}
+.tc{display:none}.tc.on{display:block}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:1.25rem}
+.mc{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.8rem 1rem}
+.ml{font-size:11px;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
+.mv{font-size:20px;font-weight:500;color:var(--color-text-primary)}
+.mu{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.st{font-size:13px;font-weight:500;color:var(--color-text-primary);margin:1.25rem 0 .6rem}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;padding:7px 8px;border-bottom:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.3px}
+td{padding:9px 8px;border-bottom:0.5px solid var(--color-border-tertiary);color:var(--color-text-primary);vertical-align:middle}
+tr:hover td{background:var(--color-background-secondary)}
+.b{display:inline-flex;align-items:center;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:500}
+.bg{background:#EAF3DE;color:#3B6D11}.ba{background:#FAEEDA;color:#854F0B}.br{background:#FCEBEB;color:#A32D2D}.bb{background:#E6F1FB;color:#185FA5}
+.rn{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--color-background-secondary);font-size:10px;font-weight:500;color:var(--color-text-secondary)}
+.r1{background:#FAEEDA;color:#854F0B}.r2{background:#F1EFE8;color:#5F5E5A}.r3{background:#FAECE7;color:#993C1D}
+.cn{font-weight:500;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.why{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.75rem 1rem;margin:.5rem 0;font-size:12.5px;color:var(--color-text-secondary);line-height:1.6;border-left:3px solid #1D9E75}
+.why.bad{border-color:#E24B4A}
+.why.warn{border-color:#BA7517}
+.wt{font-size:12px;font-weight:500;margin-bottom:3px}
+.wt.g{color:#0F6E56}.wt.r{color:#A32D2D}.wt.a{color:#854F0B}
+.cw{position:relative;width:100%;height:240px;margin:.75rem 0}
+hr{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:1.25rem 0}
+</style>
+
+<div class="rh">
+  <h1>📊 LinkTree Creative Report — Wahad</h1>
+  <p>Acquisition-Sales-Conversion-LinkTree · آخر 30 يوم · Meta + TikTok + Snapchat</p>
+</div>
+
+<div class="tabs">
+  <button class="tb on" onclick="sw('ov',this)">نظرة عامة</button>
+  <button class="tb" onclick="sw('meta',this)">Meta</button>
+  <button class="tb" onclick="sw('tt',this)">TikTok</button>
+  <button class="tb" onclick="sw('sn',this)">Snapchat</button>
+  <button class="tb" onclick="sw('why',this)">🔍 ليه نجح / ليه فشل</button>
+  <button class="tb" onclick="sw('rec',this)">💡 توصيات</button>
+</div>
+
+<!-- OVERVIEW -->
+<div id="ov" class="tc on">
+  <div class="sg">
+    <div class="mc"><div class="ml">Total Spend</div><div class="mv">~11,200</div><div class="mu">SAR · 3 منصات</div></div>
+    <div class="mc"><div class="ml">Meta Spend</div><div class="mv">~4,900</div><div class="mu">SAR · LinkTree</div></div>
+    <div class="mc"><div class="ml">TikTok Spend</div><div class="mv">~3,300</div><div class="mu">SAR · LinkTree</div></div>
+    <div class="mc"><div class="ml">Snap Spend</div><div class="mv">~3,000</div><div class="mu">SAR · LinkTree</div></div>
+  </div>
+
+  <div class="st">🏆 الفائز الأول على كل منصة</div>
+  <table>
+    <thead><tr><th>المنصة</th><th>الكريتيف</th><th>Spend</th><th>CTR / Swipe%</th><th>CPC</th><th>السبب</th></tr></thead>
+    <tbody>
+      <tr><td><span class="b bb">Meta</span></td><td class="cn">SingleVideo Creative 3</td><td>167 SAR</td><td><span class="b bg">5.37%</span></td><td>0.28 SAR</td><td>أعلى CTR + أرخص CPC</td></tr>
+      <tr><td><span class="b" style="background:#F0F0F0;color:#333">TikTok</span></td><td class="cn">SV-Creative 1</td><td>392 SAR</td><td><span class="b bg">1.03%</span></td><td>0.19 SAR</td><td>أرخص CPC على المنصة</td></tr>
+      <tr><td><span class="b ba">Snap</span></td><td class="cn">SingleVideo Creative 4</td><td>978 SAR</td><td><span class="b bg">3.12%</span></td><td>0.076 SAR</td><td>أرخص CPC + أعلى swipes</td></tr>
+    </tbody>
+  </table>
+
+  <div class="st" style="margin-top:1.25rem">❌ الأسوأ أداءً على كل منصة</div>
+  <table>
+    <thead><tr><th>المنصة</th><th>الكريتيف</th><th>Spend</th><th>CTR / Swipe%</th><th>CPC</th><th>المشكلة</th></tr></thead>
+    <tbody>
+      <tr><td><span class="b bb">Meta</span></td><td class="cn">SingleImage Creative 2</td><td>14 SAR</td><td><span class="b br">1.03%</span></td><td>0.42 SAR</td><td>أضعف CTR static</td></tr>
+      <tr><td><span class="b" style="background:#F0F0F0;color:#333">TikTok</span></td><td class="cn">SV-Creative 7</td><td>92 SAR</td><td><span class="b br">0.76%</span></td><td>0.22 SAR</td><td>أضعف CTR في LinkTree</td></tr>
+      <tr><td><span class="b ba">Snap</span></td><td class="cn">SingleVideo Creative 5</td><td>13 SAR</td><td><span class="b br">0.16%</span></td><td>1.16 SAR</td><td>CPC مرتفع جداً + swipes ضعيف</td></tr>
+    </tbody>
+  </table>
+
+  <div class="cw"><canvas id="ovChart" role="img" aria-label="مقارنة CPC عبر المنصات">Meta avg 0.35, TikTok avg 0.22, Snapchat avg 0.11</canvas></div>
+</div>
+
+<!-- META -->
+<div id="meta" class="tc">
+  <div class="sg">
+    <div class="mc"><div class="ml">Total Spend</div><div class="mv">~4,900</div><div class="mu">SAR</div></div>
+    <div class="mc"><div class="ml">Best CTR</div><div class="mv">6.03%</div><div class="mu">UGC 1 Baqlawa</div></div>
+    <div class="mc"><div class="ml">Best CPC</div><div class="mv">0.245 SAR</div><div class="mu">SV-Creative 7</div></div>
+    <div class="mc"><div class="ml">Worst CPC</div><div class="mv">0.597 SAR</div><div class="mu">SI-Creative 5</div></div>
+  </div>
+
+  <div class="st">✅ أفضل 5 كريتيف — Meta LinkTree</div>
+  <table>
+    <thead><tr><th>#</th><th>الكريتيف</th><th>Spend</th><th>Impressions</th><th>CTR</th><th>CPC</th><th>Link Clicks</th><th>V.Complete%</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="rn r1">1</span></td>
+        <td class="cn">UGC 1 - SingleVideo Baqlawa</td>
+        <td>822 SAR</td><td>84,191</td>
+        <td><span class="b bg">3.05%</span></td>
+        <td>0.32 SAR</td><td>2,313</td>
+        <td><span class="b bg">1.69%</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn r2">2</span></td>
+        <td class="cn">UGC 2 - SingleVideo Baqlawa (Eid1)</td>
+        <td>812 SAR</td><td>33,412</td>
+        <td><span class="b bg">5.55%</span></td>
+        <td>0.44 SAR</td><td>1,821</td>
+        <td><span class="b bg">3.61%</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn r3">3</span></td>
+        <td class="cn">SingleVideo Creative 3 (Eid1)</td>
+        <td>167 SAR</td><td>11,194</td>
+        <td><span class="b bg">5.37%</span></td>
+        <td>0.28 SAR</td><td>636</td>
+        <td><span class="b bg">8.57%</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">4</span></td>
+        <td class="cn">UGC 1 - SingleVideo (Eid1)</td>
+        <td>138 SAR</td><td>6,796</td>
+        <td><span class="b bg">6.03%</span></td>
+        <td>0.34 SAR</td><td>390</td>
+        <td><span class="b bg">4.75%</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">5</span></td>
+        <td class="cn">SingleVideo Creative 8 (Shawal)</td>
+        <td>659 SAR</td><td>60,619</td>
+        <td><span class="b ba">2.86%</span></td>
+        <td>0.38 SAR</td><td>1,521</td>
+        <td><span class="b ba">1.09%</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="st">❌ أسوأ 5 كريتيف — Meta LinkTree</div>
+  <table>
+    <thead><tr><th>#</th><th>الكريتيف</th><th>Spend</th><th>Impressions</th><th>CTR</th><th>CPC</th><th>Link Clicks</th><th>المشكلة</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="rn">1</span></td>
+        <td class="cn">SingleImage Creative 2</td>
+        <td>14 SAR</td><td>3,215</td>
+        <td><span class="b br">1.03%</span></td>
+        <td>0.42 SAR</td><td>31</td>
+        <td><span class="b br">CTR ضعيف</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">2</span></td>
+        <td class="cn">SingleImage Creative 5</td>
+        <td>111 SAR</td><td>18,013</td>
+        <td><span class="b br">1.39%</span></td>
+        <td>0.44 SAR</td><td>238</td>
+        <td><span class="b br">CPC مرتفع</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">3</span></td>
+        <td class="cn">SingleImage Creative 11</td>
+        <td>61 SAR</td><td>17,056</td>
+        <td><span class="b br">1.11%</span></td>
+        <td>0.32 SAR</td><td>181</td>
+        <td><span class="b br">CTR أضعف static</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">4</span></td>
+        <td class="cn">SI Creative 5 (Engagement)</td>
+        <td>9 SAR</td><td>725</td>
+        <td><span class="b br">2.07%</span></td>
+        <td>0.60 SAR</td><td>16</td>
+        <td><span class="b br">أعلى CPC</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">5</span></td>
+        <td class="cn">SingleVideo Creative 1 (Shawal)</td>
+        <td>18 SAR</td><td>1,830</td>
+        <td><span class="b br">2.40%</span></td>
+        <td>0.40 SAR</td><td>35</td>
+        <td><span class="b br">إنفاق ضئيل + CPC عالي</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cw"><canvas id="metaChart" role="img" aria-label="مقارنة CTR لأفضل الكريتيفز Meta">UGC1 Eid 6.03%, UGC2 5.55%, SV-Creative3 5.37%, UGC3 4.35%, SV-Creative8 2.86%</canvas></div>
+</div>
+
+<!-- TIKTOK -->
+<div id="tt" class="tc">
+  <div class="sg">
+    <div class="mc"><div class="ml">Total Spend</div><div class="mv">~3,300</div><div class="mu">SAR · LinkTree</div></div>
+    <div class="mc"><div class="ml">Best CPC</div><div class="mv">0.191 SAR</div><div class="mu">SV-Creative 1</div></div>
+    <div class="mc"><div class="ml">Worst CPC</div><div class="mv">0.228 SAR</div><div class="mu">SV-Creative 5</div></div>
+    <div class="mc"><div class="ml">Top Impressions</div><div class="mv">263K</div><div class="mu">UGC 2 Baqlawa</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-bottom:.75rem">⚠️ ملاحظة: كريتيفز LinkTree على TikTok كلها CTR متقاربة (0.78–1.12%) — الفرق يكمن في الـ CPC والـ Impressions</p>
+
+  <div class="st">✅ أفضل 5 كريتيف — TikTok LinkTree</div>
+  <table>
+    <thead><tr><th>#</th><th>الكريتيف</th><th>Spend</th><th>Impressions</th><th>Clicks</th><th>CTR</th><th>CPC</th><th>Avg Play</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="rn r1">1</span></td>
+        <td class="cn">SV-Creative 1</td>
+        <td>392 SAR</td><td>198,624</td><td>2,046</td>
+        <td><span class="b bg">1.03%</span></td>
+        <td><span class="b bg">0.19 SAR</span></td>
+        <td>2.38s</td>
+      </tr>
+      <tr>
+        <td><span class="rn r2">2</span></td>
+        <td class="cn">SV-Creative 8</td>
+        <td>143 SAR</td><td>79,951</td><td>736</td>
+        <td><span class="b bg">0.92%</span></td>
+        <td><span class="b bg">0.19 SAR</span></td>
+        <td>2.51s</td>
+      </tr>
+      <tr>
+        <td><span class="rn r3">3</span></td>
+        <td class="cn">SV-Creative 2</td>
+        <td>255 SAR</td><td>117,926</td><td>1,203</td>
+        <td><span class="b bg">1.02%</span></td>
+        <td><span class="b bg">0.21 SAR</span></td>
+        <td>2.51s</td>
+      </tr>
+      <tr>
+        <td><span class="rn">4</span></td>
+        <td class="cn">UGC 2 - Baqlawa</td>
+        <td>584 SAR</td><td>263,370</td><td>2,109</td>
+        <td><span class="b ba">0.80%</span></td>
+        <td>0.28 SAR</td>
+        <td>2.44s</td>
+      </tr>
+      <tr>
+        <td><span class="rn">5</span></td>
+        <td class="cn">SV-Creative 6</td>
+        <td>332 SAR</td><td>164,608</td><td>1,545</td>
+        <td><span class="b ba">0.94%</span></td>
+        <td>0.22 SAR</td>
+        <td>2.59s</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="st">❌ أسوأ 5 كريتيف — TikTok LinkTree</div>
+  <table>
+    <thead><tr><th>#</th><th>الكريتيف</th><th>Spend</th><th>Impressions</th><th>CTR</th><th>CPC</th><th>Avg Play</th><th>المشكلة</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="rn">1</span></td>
+        <td class="cn">SV-Creative 7</td>
+        <td>92 SAR</td><td>55,886</td>
+        <td><span class="b br">0.76%</span></td>
+        <td>0.22 SAR</td>
+        <td>1.75s</td>
+        <td><span class="b br">أضعف CTR + أقل play time</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">2</span></td>
+        <td class="cn">UGC 5 - Baqlawa (small)</td>
+        <td>24 SAR</td><td>10,124</td>
+        <td><span class="b br">0.91%</span></td>
+        <td>0.26 SAR</td>
+        <td>1.18s</td>
+        <td><span class="b br">أقل play time على الإطلاق</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">3</span></td>
+        <td class="cn">UGC 3 - Baqlawa (small)</td>
+        <td>17 SAR</td><td>6,171</td>
+        <td><span class="b ba">1.09%</span></td>
+        <td>0.26 SAR</td>
+        <td>1.74s</td>
+        <td><span class="b ba">إنفاق ضئيل جداً</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">4</span></td>
+        <td class="cn">UGC 4 - Baqlawa (small)</td>
+        <td>8 SAR</td><td>4,206</td>
+        <td><span class="b ba">0.78%</span></td>
+        <td>0.24 SAR</td>
+        <td>1.78s</td>
+        <td><span class="b br">إنفاق ضئيل + CTR ضعيف</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">5</span></td>
+        <td class="cn">SV-Creative 5</td>
+        <td>123 SAR</td><td>57,480</td>
+        <td><span class="b ba">0.93%</span></td>
+        <td>0.23 SAR</td>
+        <td>2.05s</td>
+        <td><span class="b ba">CPC أعلى من المتوسط</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cw"><canvas id="ttChart" role="img" aria-label="مقارنة CPC لكريتيفز TikTok">Creative1 0.19, Creative8 0.19, Creative2 0.21, Creative6 0.22, Creative5 0.23</canvas></div>
+</div>
+
+<!-- SNAPCHAT -->
+<div id="sn" class="tc">
+  <div class="sg">
+    <div class="mc"><div class="ml">Total Spend</div><div class="mv">~3,000</div><div class="mu">SAR · LinkTree</div></div>
+    <div class="mc"><div class="ml">Best CPC</div><div class="mv">0.073 SAR</div><div class="mu">SV-Creative 4</div></div>
+    <div class="mc"><div class="ml">Best Swipe%</div><div class="mv">6.73%</div><div class="mu">UGC 4 Detailed PIC</div></div>
+    <div class="mc"><div class="ml">Top Swipes</div><div class="mv">12,893</div><div class="mu">SV-Creative 4</div></div>
+  </div>
+
+  <div class="st">✅ أفضل 5 كريتيف — Snapchat LinkTree</div>
+  <table>
+    <thead><tr><th>#</th><th>الكريتيف</th><th>Spend</th><th>Impressions</th><th>Swipes</th><th>Swipe%</th><th>CPC</th><th>المميز</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="rn r1">1</span></td>
+        <td class="cn">SingleVideo Creative 4</td>
+        <td>554 SAR</td><td>187,847</td><td>7,550</td>
+        <td><span class="b bg">4.02%</span></td>
+        <td><span class="b bg">0.073 SAR</span></td>
+        <td>أرخص CPC + أعلى swipes</td>
+      </tr>
+      <tr>
+        <td><span class="rn r2">2</span></td>
+        <td class="cn">UGC 1 - SingleVideo</td>
+        <td>534 SAR</td><td>227,296</td><td>6,157</td>
+        <td><span class="b bg">2.71%</span></td>
+        <td>0.087 SAR</td>
+        <td>أعلى reach + swipes</td>
+      </tr>
+      <tr>
+        <td><span class="rn r3">3</span></td>
+        <td class="cn">UGC 4 - Detailed PIC</td>
+        <td>433 SAR</td><td>62,391</td><td>4,196</td>
+        <td><span class="b bg">6.73%</span></td>
+        <td>0.103 SAR</td>
+        <td>أعلى swipe rate على الإطلاق</td>
+      </tr>
+      <tr>
+        <td><span class="rn">4</span></td>
+        <td class="cn">SingleImage Creative 7</td>
+        <td>688 SAR</td><td>231,819</td><td>8,430</td>
+        <td><span class="b bg">3.64%</span></td>
+        <td>0.082 SAR</td>
+        <td>أعلى swipes static + CPC رخيص</td>
+      </tr>
+      <tr>
+        <td><span class="rn">5</span></td>
+        <td class="cn">UGC 17 - Detailed PIC</td>
+        <td>297 SAR</td><td>105,436</td><td>3,792</td>
+        <td><span class="b bg">3.60%</span></td>
+        <td>0.078 SAR</td>
+        <td>efficient جداً بإنفاق معقول</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="st">❌ أسوأ 5 كريتيف — Snapchat LinkTree</div>
+  <table>
+    <thead><tr><th>#</th><th>الكريتيف</th><th>Spend</th><th>Swipes</th><th>Swipe%</th><th>CPC</th><th>المشكلة</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="rn">1</span></td>
+        <td class="cn">SingleVideo Creative 5 (Awareness)</td>
+        <td>13 SAR</td><td>11</td>
+        <td><span class="b br">0.16%</span></td>
+        <td>1.16 SAR</td>
+        <td><span class="b br">أسوأ CPC + أضعف swipe%</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">2</span></td>
+        <td class="cn">UGC 2 - SingleVideo (Awareness)</td>
+        <td>10 SAR</td><td>6</td>
+        <td><span class="b br">0.14%</span></td>
+        <td>1.61 SAR</td>
+        <td><span class="b br">أعلى CPC · هدف خاطئ</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">3</span></td>
+        <td class="cn">UGC 9 - SingleVideo (Awareness)</td>
+        <td>5 SAR</td><td>8</td>
+        <td><span class="b br">0.34%</span></td>
+        <td>0.63 SAR</td>
+        <td><span class="b ba">إنفاق ضئيل + CPC مرتفع</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">4</span></td>
+        <td class="cn">SingleVideo Creative 4 (Awareness)</td>
+        <td>5 SAR</td><td>7</td>
+        <td><span class="b br">0.29%</span></td>
+        <td>0.67 SAR</td>
+        <td><span class="b ba">نفس الكريتيف بهدف غلط</span></td>
+      </tr>
+      <tr>
+        <td><span class="rn">5</span></td>
+        <td class="cn">UGC 20 - Detailed PIC</td>
+        <td>36 SAR</td><td>241</td>
+        <td><span class="b br">1.44%</span></td>
+        <td>0.148 SAR</td>
+        <td><span class="b ba">swipe% أضعف من المتوسط</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cw"><canvas id="snChart" role="img" aria-label="مقارنة Swipe Rate لكريتيفز Snapchat">UGC4 PIC 6.73%, SV4 4.02%, SI7 3.64%, UGC17 3.60%, UGC1 2.71%</canvas></div>
+</div>
+
+<!-- WHY GOOD / BAD -->
+<div id="why" class="tc">
+  <div class="st">✅ ليه الكريتيفز الناجحة نجحت؟</div>
+
+  <div class="why">
+    <div class="wt g">🏆 UGC Videos (Baqlawa) — ليه نجحوا؟</div>
+    UGC Baqlawa نجح على الـ 3 منصات لأنه يحتوي على <strong>Hook إنساني</strong> — شخص حقيقي يتكلم مباشرة للكاميرا. الـ CTR وصل لـ 6.03% على Meta (UGC 1) مقارنة بـ 1.39% للـ Static. على TikTok وصل play time لـ 3.1s مقارنة بـ 1.18s للـ UGC الضعيف. السبب: المشاهد يرى وجه حقيقي → يوقف التمرير → ينقر.
+  </div>
+
+  <div class="why">
+    <div class="wt g">🏆 SV-Creative 3 على Meta — ليه نجح؟</div>
+    حقق CTR 5.37% بـ CPC 0.28 SAR وهو الأرخص في Video campaigns على Meta. السبب: الفيديو قصير وواضح، الـ Hook في أول 3 ثواني قوي، و completion rate 8.57% — أعلى completion على المنصة مما يعني الخوارزمية تكافئه بـ CPM أرخص.
+  </div>
+
+  <div class="why">
+    <div class="wt g">🏆 SV-Creative 4 على Snapchat — ليه نجح؟</div>
+    حقق 12,893 swipe بـ CPC 0.073 SAR — الأرخص على المنصة. السبب: الكريتيف يعمل مباشرة مع طبيعة سناب (vertical video، سريع، واضح CTA). الـ swipe% 4.02% يدل أن الجمهور يثق بالمنتج ويتفاعل.
+  </div>
+
+  <div class="why">
+    <div class="wt g">🏆 SV-Creative 1 على TikTok — ليه نجح؟</div>
+    أرخص CPC بـ 0.19 SAR مع 198K impression. السبب: الكريتيف يشبه محتوى TikTok العضوي (organic feel)، الـ Hook يجذب الجمهور المستهدف بسرعة، ولا يبدو كإعلان تقليدي.
+  </div>
+
+  <hr>
+  <div class="st">❌ ليه الكريتيفز الفاشلة فشلت؟</div>
+
+  <div class="why bad">
+    <div class="wt r">💔 Static Images على Meta — ليه أضعف؟</div>
+    الـ SingleImage creatives حققت CTR بين 1.03%–2.07% مقارنة بـ 3%–6% للفيديو. السبب: الصورة الثابتة لا تجذب الانتباه في الـ Feed المتحرك. الخوارزمية تفضل الفيديو وتعطيه CPM أرخص — CPM الفيديو 10-16 SAR مقابل 4-6 SAR للصورة لكن الـ CTR مختلف بشكل جذري لصالح الفيديو.
+  </div>
+
+  <div class="why bad">
+    <div class="wt r">💔 كريتيفز Awareness في سناب على Link campaign — ليه فشلوا؟</div>
+    الكريتيفز اللي اتشغلت في campaign "Awarness-Conversion-Video Views" حققت swipe% بين 0.14%–0.69% مقارنة بـ 2%–4% للـ LinkTree campaign. السبب: <strong>الهدف غلط</strong> — الكريتيف مش مُحسَّن للـ swipe بل للـ video view، فالخوارزمية تبحث عن ناس يكملوا الفيديو مش ناس ينقروا.
+  </div>
+
+  <div class="why bad">
+    <div class="wt r">💔 SV-Creative 7 على TikTok — ليه أضعف؟</div>
+    CTR 0.76% وهو الأضعف مع play time 1.75s فقط. السبب: الـ Hook الأولي ضعيف — الناس بتمرر قبل الثانية التانية. لما play time أقل من 2s على TikTok، الخوارزمية تقلل التوزيع وترفع الـ CPM. الكريتيف ممكن يكون محتواه جيد لكن ثانيته الأولى ما بتوقف التمرير.
+  </div>
+
+  <div class="why warn">
+    <div class="wt a">⚠️ UGC Baqlawa صغيرة الإنفاق على TikTok — ليه أداؤها ضعيف؟</div>
+    UGC 3, 4, 5 بإنفاق 7–24 SAR حققت play time بين 1.16–1.78s وهو أضعف من نفس الكريتيفز بميزانية أعلى. السبب: <strong>البيانات غير كافية</strong> — الخوارزمية لم تتعلم بعد. TikTok يحتاج على الأقل 50-100 click قبل ما يحسن التوزيع.
+  </div>
+</div>
+
+<!-- RECOMMENDATIONS -->
+<div id="rec" class="tc">
+  <div class="st">💡 توصيات فورية لكل منصة</div>
+
+  <div class="why">
+    <div class="wt g">Meta — اعمل كده فوراً</div>
+    ① زود ميزانية <strong>UGC 1 Baqlawa (Eid2)</strong> — 822 SAR أنتج 2,313 link click بـ 0.32 SAR = أقل CPC مع أعلى volume.<br>
+    ② <strong>SV-Creative 3</strong> تستحق 3x ميزانية — CTR 5.37% + completion 8.57% + CPC 0.28 SAR.<br>
+    ③ وقف <strong>SingleImage Creative 2, 5, 11</strong> — CTR أقل من 1.5% مع CPC أعلى من 0.40 SAR.<br>
+    ④ اختبر UGC 1 وUGC 2 في Broad targeting بدل Cold Women فقط.
+  </div>
+
+  <div class="why">
+    <div class="wt g">TikTok — اعمل كده فوراً</div>
+    ① <strong>SV-Creative 1</strong> يستحق أعلى ميزانية — CPC 0.19 SAR هو الأرخص بفارق كبير.<br>
+    ② <strong>SV-Creative 8</strong> كمان بـ 0.19 SAR CPC — زود ميزانيته لـ 2-3x.<br>
+    ③ وقف أو اختبر hook جديد لـ <strong>SV-Creative 7</strong> — play time 1.75s يعني الـ Hook ميش شاغل.<br>
+    ④ UGC Baqlawa صغيرة الإنفاق: إما ارفعها لـ 50+ SAR عشان الخوارزمية تتعلم، أو وقفها.
+  </div>
+
+  <div class="why">
+    <div class="wt g">Snapchat — اعمل كده فوراً</div>
+    ① <strong>SV-Creative 4</strong> هو الملك — 0.073 SAR CPC و7,550 swipe. زود ميزانيته بـ 50%.<br>
+    ② <strong>UGC 4 Detailed PIC</strong> swipe rate 6.73% = الأعلى على المنصة. ضاعف ميزانيته.<br>
+    ③ <strong>SI-Creative 7</strong> أعلى swipes static (8,430) بـ 0.082 SAR CPC — ابقيه شغال.<br>
+    ④ وقف فوراً كريتيفز الـ Awareness في LinkTree campaign — هدف خاطئ، CPC مرتفع جداً (0.63–1.61 SAR).
+  </div>
+
+  <div class="why">
+    <div class="wt a">⚠️ استراتيجية عامة — Cross-Platform</div>
+    • <strong>UGC Baqlawa</strong> هو الـ winning concept عبر الـ 3 منصات — أنتج المزيد من نفس الأسلوب (UGC، وجه حقيقي، Hook قوي في أول 3 ثواني).<br>
+    • على Snap: ركز الميزانية على Acquisition-Sales-LinkTree campaign بس، وأوقف Awareness للـ click campaigns.<br>
+    • على TikTok: SV-Creatives (1, 2, 8) تتفوق على UGC في الـ CPC — ابدأ بهم في الـ scale.<br>
+    • على Meta: الفيديو يتفوق بشكل حاد على الصورة في LinkTree campaign — وجه الميزانية للفيديو.
+  </div>
+
+  <table style="margin-top:1rem">
+    <thead><tr><th>الأولوية</th><th>الكريتيف</th><th>المنصة</th><th>الإجراء</th><th>التوقع</th></tr></thead>
+    <tbody>
+      <tr><td><span class="b bg">فوري</span></td><td class="cn">SV-Creative 4</td><td>Snap</td><td>زود ميزانية 50%</td><td>CPC ثابت 0.073 SAR</td></tr>
+      <tr><td><span class="b bg">فوري</span></td><td class="cn">SV-Creative 1</td><td>TikTok</td><td>زود ميزانية 2x</td><td>CPC ثابت 0.19 SAR</td></tr>
+      <tr><td><span class="b bg">فوري</span></td><td class="cn">UGC 1 Baqlawa</td><td>Meta</td><td>زود ميزانية 2x</td><td>volume أعلى بنفس CPC</td></tr>
+      <tr><td><span class="b ba">قريب</span></td><td class="cn">UGC 4 PIC</td><td>Snap</td><td>ضاعف ميزانية</td><td>swipe rate 6.73% ثابت</td></tr>
+      <tr><td><span class="b br">فوري</span></td><td class="cn">Awareness créatives</td><td>Snap</td><td>وقف في Link campaigns</td><td>توفير تكلفة</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+function sw(id,btn){
+  document.querySelectorAll('.tc').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  btn.classList.add('on');
+}
+
+const co={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:{size:11}}},y:{grid:{color:'rgba(0,0,0,0.05)'}}}};
+
+new Chart(document.getElementById('ovChart'),{
+  type:'bar',
+  data:{
+    labels:['Meta avg CPC','TikTok avg CPC','Snap avg CPC'],
+    datasets:[{
+      label:'CPC (SAR)',
+      data:[0.35,0.22,0.11],
+      backgroundColor:['#1877F2','#444','#FFCC00'],
+      borderRadius:4
+    }]
+  },
+  options:{...co,scales:{x:{grid:{display:false},ticks:{font:{size:11}}},y:{grid:{color:'rgba(0,0,0,0.05)'},ticks:{callback:v=>v+' SAR'}}}}
+});
+
+new Chart(document.getElementById('metaChart'),{
+  type:'bar',
+  data:{
+    labels:['UGC 1 (Eid1)','UGC 2 (Eid1)','SV-Creative 3','SV-Creative 8','UGC 1 (Eid2)'],
+    datasets:[{label:'CTR %',data:[6.03,5.55,5.37,2.86,3.05],backgroundColor:['#1877F2','#378ADD','#85B7EB','#B5D4F4','#E6F1FB'],borderRadius:4}]
+  },
+  options:{...co,scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{grid:{color:'rgba(0,0,0,0.05)'},ticks:{callback:v=>v+'%'}}}}
+});
+
+new Chart(document.getElementById('ttChart'),{
+  type:'bar',
+  data:{
+    labels:['SV-1','SV-8','SV-2','SV-6','SV-4','SV-5','SV-7'],
+    datasets:[{label:'CPC SAR',data:[0.19,0.19,0.21,0.22,0.23,0.23,0.22],backgroundColor:['#333','#444','#555','#777','#999','#bbb','#ddd'],borderRadius:4}]
+  },
+  options:{...co,scales:{x:{grid:{display:false},ticks:{font:{size:11}}},y:{grid:{color:'rgba(0,0,0,0.05)'},ticks:{callback:v=>v+' SAR'},min:0.15,max:0.30}}}
+});
+
+new Chart(document.getElementById('snChart'),{
+  type:'bar',
+  data:{
+    labels:['UGC4 PIC','SV4','SI7','UGC17','UGC1','UGC3 V','UGC8'],
+    datasets:[{label:'Swipe%',data:[6.73,4.02,3.64,3.60,2.71,4.17,3.24],backgroundColor:['#FFCC00','#FFD740','#FFE066','#FFF0A0','#FFFACC','#E0C800','#C8B000'],borderRadius:4}]
+  },
+  options:{...co,scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{grid:{color:'rgba(0,0,0,0.05)'},ticks:{callback:v=>v+'%'}}}}
+});
+</script>
